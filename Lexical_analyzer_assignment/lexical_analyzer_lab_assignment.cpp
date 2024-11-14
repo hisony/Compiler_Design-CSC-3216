@@ -27,9 +27,19 @@ bool isValidFunctionName(const string &name) {
     return true;
 }
 
+
 bool isAllDigits(const string &str) {
     return all_of(str.begin(), str.end(), ::isdigit);
 }
+/*
+bool isAllDigits(const string &str) {
+    for (char ch : str) {
+        if (!isdigit(ch)) {
+            return false;
+        }
+    }
+    return true;
+}*/
 
 bool containsArithmeticOperator(const string &str) {
     string operators = "+-*/%";
